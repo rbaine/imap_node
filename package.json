@@ -1,0 +1,16 @@
+{
+  "name": "imap_node",
+  "version": "0.0.1",
+  "description": "test node app to check email for iTrack (imap version)",
+  "main": "simple.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rod Baine",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.2",
+    "imap": "^0.8.15",
+    "mailparser": "^0.5.2"
+  }
+}
