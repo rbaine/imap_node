@@ -29,3 +29,6 @@ node_modules
 
 # temp attachment download
 temp
+
+# user config
+userinfo_*.js

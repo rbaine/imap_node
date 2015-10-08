@@ -5,7 +5,7 @@ var fs = require('fs');
 var Imap = require('imap');
 var inspect = require('util').inspect;
 var MailParser = require("mailparser").MailParser;
-var userInfo = require("./userinfo");
+var userInfo = require("./userinfo_rbaine");
 
 
 var imap = new Imap({
@@ -35,7 +35,8 @@ imap.once('ready', function () {
     // // all by msg id
     var f = imap.seq.fetch('1:*', {
       bodies: '',
-      struct: true
+      struct: true,
+      markSeen: true
     });
 
     f.on('message', function (msg, seqno) {
